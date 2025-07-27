@@ -38,18 +38,23 @@ Key columns: PassengerId, Survived, Pclass, Sex, Age, SibSp, Parch, Ticket, Fare
 1. Demographics of the Passengers:
    
   •	Most passengers were male.
+  
   •	Majority were in 3rd class.
+  
   •	Children were classified based on age < 16.
 
 2. Age Distribution:
 
   •	KDE plots show age patterns by gender, class, and person type.
+  
   •	Younger passengers had a better survival chance.
 
 3. Cabin Decks:
 
   •	Decks were extracted from the Cabin column.
+  
   •	Most common decks: B, C, D, E.
+  
   •	Deck T was removed due to being an outlier.
 
 4. Embarkation Points:
@@ -59,42 +64,59 @@ Key columns: PassengerId, Survived, Pclass, Sex, Age, SibSp, Parch, Ticket, Fare
 5. Alone vs With Family:
 
   •	Derived a new Alone column combining SibSp and Parch.
+  
   •	The majority of passengers were traveling alone.
 
 **Survival Analysis:**
 
 •	Sex: Females had higher survival rates.
+
 •	Class: 1st class passengers had the highest chance of survival.
+
 •	Age: Survival decreased with age.
+
 •	Deck: Decks B, D, and E had higher survival rates.
+
 •	Family: Passengers with family aboard had a better chance of surviving.
 
 **Key Visuals:**
 
 •	Countplots by gender, class, and embarkation.
+
 •	KDE plots for age distributions.
+
 •	Point plots for survival by class, gender, and age.
+
 •	Bar plots showing survival rates by Deck and Family status.
 
 **Insights:**
 
 •	Women and children first was reflected in survival patterns.
+
 •	Class mattered — 1st class passengers had more access to lifeboats.
+
 •	Being with family slightly improved chances of survival.
+
 •	Cabin deck location showed correlation with survival.
 
 **Future Improvements:**
 
 •	Handle missing Age and Cabin values more rigorously.
+
 •	Engineer additional features like Title, Fare per person, etc.
+
 •	Use Machine Learning for predictive modeling.
 
 **Appendix:**
 
 Notebook includes:
+ 
   •	Data Cleaning
+
   •	Feature Engineering (e.g., person, Alone, Deck)
+  
   •	Visual Analysis
+  
   •	Grouped Statistics
 
 **Conclusion:**
